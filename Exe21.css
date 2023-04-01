@@ -1,0 +1,258 @@
+.Container {
+    border: 2px transparent solid;
+    height: 800px;
+    width: 1740px;
+    margin: 10px 5px 10px 5px;
+    padding: 20px;
+    background-color: white;
+
+
+
+}
+
+.Container>.div1 {
+    border: 1px transparent solid;
+    height: 150px;
+    width: 900px;
+    margin: -20px 0px 0px -20px;
+
+    background-image: url('Images/1BV.jpeg');
+    background-size: 1000px 150px;
+    background-repeat: no-repeat;
+
+
+}
+.Container>.div1>.div4{
+    border: transparent solid 2px;
+    margin-left:900px;
+    margin-top: -2px;
+    height:150px;
+    width:876px;
+}
+
+
+
+
+
+.Container>.div2 {
+    border: transparent 1px solid;
+    height: 40px;
+    width: 1779px;
+    margin-left: -20px;
+    position: sticky;
+    background-color: rgb(1, 1, 12, 0.9);
+
+
+}
+
+.Container>.div3 {
+    border: transparent 1px solid;
+    height: 642px;
+    width: 1779px;
+    margin-left: -20px;
+
+    background-image: url('Images/main.webp');
+    background-repeat: no-repeat;
+    background-size: 1779px 685px;
+
+}
+
+.Container>.div3>.div5{
+        height:684px;
+        width:700px;
+        border:transparent 2px solid;
+        background-color: rgb(31, 30, 30 ,0.9);
+        float:right;
+        margin-top:-44px;
+
+}
+
+.div3>.div5>h4{
+    color:white;
+    font-size: 30px;
+    margin-top:170px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 40px;
+
+}
+
+.div3>.div5>h2{
+            color:white;
+            font-size: 40px;
+            margin-top:30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 40px;
+             
+}
+#button
+{
+    font-size: 25px;
+    
+    border: solid 2px white;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height:40px;
+    margin-left:40px;
+    padding-top:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#button > a
+{
+    color: white;
+    text-decoration: none;
+    
+}
+/*.div2>nav{
+    border:solid black 0px;
+    width:200px;
+    font-size:30px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    column-count: 6;
+    column-gap: 10px;
+    column-rule:3px white solid;
+    float:right;
+}*/
+.div4 > nav ul{
+    list-style: none;
+   
+    padding:0;
+    position:relative;
+}
+
+.div4 > nav ul li
+        {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            background-color:white;
+            color:blue;
+            margin:0px;
+            align-items: right;
+            padding-left:5px;
+            float:left; 
+            position: relative;
+            width:105px;
+            height: 35px;
+            margin-top: 25px;
+            
+            
+           
+        }
+        
+.div4 > nav ul li:hover
+{
+            background-color:rgb(201, 201, 230);
+            color: black;
+            height: 25px;
+}
+.div2>nav ul {
+
+    list-style: none;
+
+    margin-left: 100px;
+
+    padding: 0;
+
+    position: relative;
+
+}
+
+
+
+.div2>nav ul li {
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+    background-color: rgb(1, 1, 12, 0);
+
+    color: white;
+
+    margin: 0px;
+
+    align-items: right;
+
+    padding-left: 2px;
+
+    float: left;
+
+    position: relative;
+
+    width: 150px;
+
+    height: 30px;
+
+    margin-top: 5px;
+    
+}
+
+
+.div2 > nav ul li:hover
+{
+  
+    background-color:white;
+    color: black;
+    height: 25px;
+}
+
+.div2 > nav
+{
+    font-size: 20px;
+    position:relative;
+}
+
+.div2 > nav ul
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+    position:relative;
+
+}
+
+.div2 > nav ul li
+{
+    background-color:rgb(1, 1, 12, 0);
+    font-size: 23px;
+    text-align: center; 
+    color:beige;         
+   
+    float:left;
+    width:260px;
+    position: relative;
+   
+}
+
+.div2 > nav ul a
+{
+ text-decoration: none;
+
+}
+.div2 > nav ul ul
+{
+    z-index:5; 
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:none;
+    position:absolute;
+    
+}
+.div2 > nav ul li:hover 
+{
+    background-color:rgb(1, 1, 12, 0.9);
+    color:white;
+}
+nav ul li:hover ul
+        {
+            background-color:rgb(1, 1, 12, 0.9);
+            color:white;
+            display:block;
+        }

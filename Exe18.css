@@ -1,0 +1,74 @@
+.container{
+        height: 700px;
+        width:700px;
+        border:10px solid rgb(7, 175, 197);
+        background:url('Images/Shin-Chan.jpg');
+        background-repeat: no-repeat;
+        background-size: 700px 700px;
+        margin:auto;
+        margin-top: 100px;
+        position: relative;
+       
+}
+.container>.div1{
+        border:rgb(0, 92, 128) 1px solid;
+        border-radius: 20%;
+        margin:-100px;
+        height:200px;
+        width:200px;
+        background: url('Images/Ex18_50.png');
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        top:0px;
+        left:0px;
+        animation-name: animateOne;
+        animation-duration: 7s;
+        position: absolute;
+     /*   animation-iteration-count: infinite;*/
+}
+.container>.div1>img{
+    background-size: cover;
+}
+
+
+@keyframes animateOne{
+    0%{
+        top:0px;
+        left:0px;
+         background: url('Images/Ex18_50.png');
+         background-size: 200px 200px;
+         background-repeat: no-repeat;
+         
+    }
+    25%{
+        top:0px;
+        left:700px;
+        background: url('Images/Ex18_25.png');
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+    }
+       
+    50%{
+        top:700px;
+        left:700px;
+        background: url('Images/Ex18_0.jpg');
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+      
+    }
+    75%{
+        top:700px;
+        left:0px;
+        background: url('Images/Ex18_75.webp');
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        
+    }
+    0%{
+        top:0px;
+        left:0px;
+        background: url('Images/Ex18_50.png');
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+      
+}

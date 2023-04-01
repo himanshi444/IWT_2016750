@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise=29</title>
+    <style>
+        text{
+            font-size: 5pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="text"></div>
+    <script >
+        fontsize=5;
+        
+        function increase(){
+            x=document.getElementById("text");
+            x.innerHTML="TEXT-GROWING";
+            x.style.color="red";
+            fontsize++;
+            x.style.fontSize=fontsize+'pt';
+            if(fontsize==50){
+                clearInterval(i);
+                d=setInterval(decrease,100);
+            }
+        }
+        function decrease(){
+            x=document.getElementById("text");
+            x.innerHTML="TEXT-SHRINKING";
+            x.style.color="blue";
+            fontsize--;
+            x.style.fontSize=fontsize+'pt';
+            if(fontsize==5){
+                clearInterval(d);
+                i=setInterval(increase,100);
+            }
+        }
+        i=setInterval(increase,100);
+    </script>
+</body>
+</html>

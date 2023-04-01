@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+        }
+
+ 
+
+        .card {
+
+            border: 5px solid blueviolet;
+
+            width: 30%;
+
+            box-shadow: 2px 2px 5px black;
+
+            padding: 10px;
+
+        }
+
+ 
+
+        .card>img {
+
+            height: 500px;
+
+            width: 100%;
+
+        }
+
+ 
+
+        .desc {
+
+            padding: 10px;
+
+            display: block;
+
+            position: relative;
+
+        }
+
+ 
+
+        .date {
+
+            height: 40px;
+
+            width: 100px;
+
+            background-color: darkcyan;
+
+            color: azure;
+
+            font-weight: 800;
+
+            font-size: 30px;
+
+            position: absolute;
+
+            top: 20px;
+
+            transform: rotate(45deg);
+
+        }
+
+    </style>
+
+</head>
+
+ 
+
+<body>
+
+    <div style="display:flex;">
+
+        <script>
+
+            images = ["4.jpg", "7.jpg", "8.jpg"]
+
+            titles = ['A', 'B', 'C']
+
+            desc = ["This is a duck.", "This is a cat.", "These are the buildings."]
+
+            dt = ['31 Dec', '11 Apr', '15 Sep']
+
+            for (i = 0; i < 3; i++) {
+
+                x = '<div class="card">' + '<img src="Images/' + images[i] + '"/>' + '<div class="date">' + dt[i] + '</div>' +
+
+                '<div class="desc">' + '<h2>' + titles[i] + '</h2>' + '<p>' + desc[i] + '</p>' + '</div>' + '</div>'
+
+                document.write(x);
+
+            }
+
+
+        </script>
+
+</div>
+
+</body>
+
+
+
+</html>

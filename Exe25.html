@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body bgcolor="darkcyan">
+    <form onsubmit="return validate()">
+    <table width="70%" align="center" valign="center" border="0" cellspacing="20">
+        <tr align="center" cellpadding="5">
+            <td colspan="2">
+                <font face="Times new roman"  size="20" color="black" align="center"><i>Create New Account </i></font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+
+            </td>
+        </tr>
+        <tr>
+            <td  align="center"><b>Name:</b></td>
+            <td colspan="2">
+                <input type="text" name="name" placeholder="Enter your name" size="40" required>
+            </td>
+        </tr>
+        
+        <tr>
+            <td  align="center"><b>Age:</b></td>
+            <td colspan="2">
+                <input type="number" min="0" name="age" placeholder="Enter your age" size="40" required>
+            </td>
+        </tr>
+        <tr>
+            <td  align="center"><b>Gender:</b></td>
+            <td colspan="2">
+               <select name="" id="">
+                <option selected>Select</option>
+                <option selected>Male</option>
+                <option selected>Female</option>
+                <option selected>Prefer not to say</option>
+                <select>
+            </td>
+        </tr>
+        <tr>
+            <td  align="center"><b>Email:</b></td>
+            <td colspan="2">
+                <input type="email"  name="email" placeholder="Enter your email" size="60" required>
+            </td>
+        </tr>
+        <tr>
+            <td  align="center"><b>Create your username</b></td>
+            <td colspan="2">
+                <input type="text" size="60" required>
+            </td>
+        </tr>
+        <tr>
+            <td  align="center"><b>Create your password</b></td>
+            <td colspan="2">
+                <input type="password" size="60" required>
+            </td>
+        </tr>
+        <tr align="center">
+           
+            <td colspan="3">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+
+    <script>
+        validate();
+       function validate(){
+            name=document.forms[0].elements['name'].value;
+            funReg=/^[a-zA-Z]{2,20}$/
+            if(!funReg.test(name)){
+                alert("Not valid");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

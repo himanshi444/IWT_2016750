@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-21</title>
+    <style>
+        .inner{
+            background-color: white;
+            border:2px solid black ;
+            height: 50px;
+            width: 50px;
+           
+            margin:0;
+
+        }
+        .inner:hover{
+            background-color: red;
+        }
+
+        .outer{
+            background-color:black;
+            height:50px;
+            width:50px;
+            margin:0;
+        }
+        .container{
+            display:flex;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        m=prompt("Enter number of rows");
+        n=prompt("Enter number of columns");
+
+        for(i=0;i<m;i++){
+            document.write("<div class='container'>");
+                for(j=0;j<n;j++)
+                {
+                    if((i+j)%2==0)
+                    {
+                      document.write("<div class= 'inner'></div>"); 
+                    }
+                    else{
+                        document.write("<div class='outer'></div>");
+                    }
+                }
+                document.write("</div>");
+        }
+    </script>
+</body>
+</html>

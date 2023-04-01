@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Temperature Conversion</title>
+
+</head>
+
+<body>
+
+    <form>
+
+        <input type="number" name="input">
+
+        <select name="inop">
+
+            <option value="C"> Celcius</option>
+
+            <option value="F"> Fahrenheit</option>
+
+            <option value="K"> Kelvin </option>
+
+        </select>
+
+        <input type="number" name="output">
+
+        <select name="outop">
+
+            <option value="C"> Celcius</option>
+
+            <option value="F"> Fahrenheit</option>
+
+            <option value="K"> Kelvin </option>
+
+        </select>
+
+    </form>
+
+    <button onclick='convert()'> Convert </button>
+
+    <script>
+
+        function convert()
+
+        {
+
+            input=parseFloat(document.forms[0].elements[0].value);
+
+            inop=document.forms[0].elements[1].value;
+
+            outop=document.forms[0].elements[3].value;
+
+ 
+
+            if(inop=='C' && outop=='K')
+
+            {
+
+                result=input+273;
+
+            }
+
+             else if(inop=='C' && outop=='F')
+
+             {
+
+                result=input*9/5+32;
+
+            }
+
+            else  if(inop=='F' && outop=='C')
+
+            {
+
+               result=(input-32)*5/9;
+
+            }
+
+            else  if(inop=='F' && outop=='K')
+
+            {
+
+               result=5/9(input)+459.67;
+
+            }
+
+            else  if(inop=='K' && outop=='C')
+
+            {
+
+               result=input-273;
+
+            }
+
+            else  if(inop=='K' && outop=='F')
+
+            {
+
+               result=(input-273)*9/5+32;
+
+            }
+
+ 
+
+             else
+
+            {
+
+                result=input;
+
+            }
+
+            document.forms[0].elements[2].value=result;
+
+           
+
+        }
+
+       
+
+           
+
+    </script>
+
+</body>
+
+</html>

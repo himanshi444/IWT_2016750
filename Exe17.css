@@ -1,0 +1,36 @@
+body{
+    background-image:url(Images/bgs/light_checkered_tiles.png);
+}
+
+p{
+    border:10px double orangered;
+    color:brown;
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: oblique;
+    background-image:url(Images/bgs/washi.png);
+    
+    
+}
+p1{
+    border:10px double rgb(66, 4, 51);
+    color:rgb(3, 73, 15);
+    font-size:15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style:italic;
+    font-variant: small-caps;
+}
+div p{
+    height:300px;
+    width:400px;
+    margin:10px;
+    padding:30px;
+    border-radius:10%;
+    box-sizing:border-box;
+    float:left;
+}
+
+div p1{
+    height:600px;
+    width:500px;
+}
